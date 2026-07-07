@@ -117,7 +117,6 @@ const DAY_TIME_CALENDAR_OPTION_KEYS = [
 @Component({
   selector: 'dp-demo',
   templateUrl: './demo.component.html',
-  entryComponents: [DatePickerComponent],
   styleUrls: ['./demo.component.less']
 })
 export class DemoComponent {

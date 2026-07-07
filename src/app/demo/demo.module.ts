@@ -1,4 +1,3 @@
-import {DatePickerComponent} from '../date-picker/date-picker.component';
 import {RouterModule} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {DemoComponent} from './demo/demo.component';
@@ -24,9 +23,6 @@ import {GaService} from './services/ga/ga.service';
   declarations: [
     DemoRootComponent,
     DemoComponent
-  ],
-  entryComponents: [
-    DatePickerComponent
   ],
   providers: [GaService],
   bootstrap: [DemoRootComponent]
