@@ -4,7 +4,7 @@ import {DatePickerComponent} from '../../date-picker/date-picker.component';
 import {DatePickerDirective} from '../../date-picker/date-picker.directive';
 import {Component, HostListener, ViewChild} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import * as momentNs from 'jalali-moment';
+import momentNs from 'jalali-moment';
 import {Moment} from 'jalali-moment';
 import {GaService} from '../services/ga/ga.service';
 import {ECalendarValue} from '../../common/types/calendar-value-enum';
@@ -115,6 +115,7 @@ const DAY_TIME_CALENDAR_OPTION_KEYS = [
 ];
 
 @Component({
+  standalone: false,
   selector: 'dp-demo',
   templateUrl: './demo.component.html',
   styleUrls: ['./demo.component.less']
@@ -143,7 +144,7 @@ export class DemoComponent {
   pickerMode = 'daytimePicker';
 
   direction: string = 'ltr';
-  date: Moment;
+  date: Moment = undefined;
   dates: Moment[] = [];
   material: boolean = true;
   required: boolean = false;

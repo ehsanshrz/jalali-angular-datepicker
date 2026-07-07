@@ -1,7 +1,7 @@
 import {ECalendarValue} from '../../types/calendar-value-enum';
 import {SingleCalendarValue} from '../../types/single-calendar-value';
 import {Injectable} from '@angular/core';
-import * as momentNs from 'jalali-moment';
+import momentNs from 'jalali-moment';
 import {Moment, MomentInput, unitOfTime} from 'jalali-moment';
 import {CalendarValue} from '../../types/calendar-value';
 import {IDate} from '../../models/date.model';

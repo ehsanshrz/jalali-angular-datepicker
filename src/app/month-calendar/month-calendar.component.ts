@@ -16,7 +16,7 @@ import {
 } from '@angular/core';
 import {IMonth} from './month.model';
 import {MonthCalendarService} from './month-calendar.service';
-import * as momentNs from 'jalali-moment';
+import momentNs from 'jalali-moment';
 import {Moment} from 'jalali-moment';
 import {IMonthCalendarConfig, IMonthCalendarConfigInternal} from './month-calendar-config';
 import {
@@ -35,6 +35,7 @@ import {INavEvent} from '../common/models/navigation-event.model';
 const moment = momentNs;
 
 @Component({
+  standalone: false,
   selector: 'dp-month-calendar',
   templateUrl: 'month-calendar.component.html',
   styleUrls: ['month-calendar.component.less'],

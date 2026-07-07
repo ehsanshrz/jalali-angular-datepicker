@@ -17,7 +17,7 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 import {DayCalendarService} from './day-calendar.service';
-import * as momentNs from 'jalali-moment';
+import momentNs from 'jalali-moment';
 import {Moment, MomentInput, unitOfTime} from 'jalali-moment';
 import {IDayCalendarConfig, IDayCalendarConfigInternal} from './day-calendar-config.model';
 import {IDay} from './day.model';
@@ -38,6 +38,7 @@ import {INavEvent} from '../common/models/navigation-event.model';
 const moment = momentNs;
 
 @Component({
+  standalone: false,
   selector: 'dp-day-calendar',
   templateUrl: 'day-calendar.component.html',
   styleUrls: ['day-calendar.component.less'],
