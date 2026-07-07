@@ -31,9 +31,6 @@ export {MonthCalendarComponent} from './month-calendar/month-calendar.component'
     TimeSelectComponent,
     DayTimeCalendarComponent
   ],
-  entryComponents: [
-    DatePickerComponent
-  ],
   imports: [
     CommonModule,
     FormsModule
