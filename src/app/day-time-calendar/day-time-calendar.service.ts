@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import * as momentNs from 'jalali-moment';
+import momentNs from 'jalali-moment';
 import {Moment} from 'jalali-moment';
 
 import {UtilsService} from '../common/services/utils/utils.service';

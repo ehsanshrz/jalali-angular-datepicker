@@ -36,6 +36,7 @@ import {DayCalendarComponent} from '../day-calendar/day-calendar.component';
 import {INavEvent} from '../common/models/navigation-event.model';
 
 @Component({
+  standalone: false,
   selector: 'dp-day-time-calendar',
   templateUrl: 'day-time-calendar.component.html',
   styleUrls: ['day-time-calendar.component.less'],

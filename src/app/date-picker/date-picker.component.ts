@@ -1,4 +1,4 @@
-import * as momentNs from 'jalali-moment';
+import momentNs from 'jalali-moment';
 const moment = momentNs;
 import {IDate} from '../common/models/date.model';
 import {DomHelper} from '../common/services/dom-appender/dom-appender.service';
@@ -54,6 +54,7 @@ import {DayTimeCalendarComponent} from '../day-time-calendar/day-time-calendar.c
 import {INavEvent} from '../common/models/navigation-event.model';
 
 @Component({
+  standalone: false,
   selector: 'dp-date-picker',
   templateUrl: 'date-picker.component.html',
   styleUrls: ['date-picker.component.less'],

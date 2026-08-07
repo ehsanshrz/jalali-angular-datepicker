@@ -9,6 +9,7 @@ import {
 } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'dp-calendar-nav',
   templateUrl: './calendar-nav.component.html',
   styleUrls: ['./calendar-nav.component.less'],
